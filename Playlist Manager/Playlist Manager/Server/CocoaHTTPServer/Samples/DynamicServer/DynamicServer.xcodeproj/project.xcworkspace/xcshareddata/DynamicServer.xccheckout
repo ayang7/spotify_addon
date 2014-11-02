@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>4C0D21BC-E8D3-4369-AF37-1C40B25002B6</string>
+	<key>IDESourceControlProjectName</key>
+	<string>DynamicServer</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>CE2E2C74-68DC-4A26-ACBC-048DC9D2B1BB</key>
+		<string>https://github.com/ayang7/spotify_addon</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Playlist Manager/Playlist Manager/Server/CocoaHTTPServer/Samples/DynamicServer/DynamicServer.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>CE2E2C74-68DC-4A26-ACBC-048DC9D2B1BB</key>
+		<string>../../../../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/ayang7/spotify_addon</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CE2E2C74-68DC-4A26-ACBC-048DC9D2B1BB</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CE2E2C74-68DC-4A26-ACBC-048DC9D2B1BB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>spotify_addon</string>
+		</dict>
+	</array>
+</dict>
+</plist>
