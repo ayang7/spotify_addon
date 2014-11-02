@@ -6,19 +6,93 @@
 //
 //
 
+#import <Foundation/Foundation.h>
+
 #ifndef Playlist_Manager_UsersAdmins_h
 #define Playlist_Manager_UsersAdmins_h
 
-@interface User : SPTSession
+
+typedef enum{
+    UP,
+    DOWN
+}Vote;
+
+
+@interface Song : NSObject
 {
-    NSString *_songroomname;
+    NSNumber *trackID;
+    NSNumber *votes;
+    NSMutableArray* <NSString*> alreadyVoted;
 }
 
-- (void)joinSongroom :
+- (void)vote : (Vote) upDown;
 
 
 @end
 
+
+@interface SongRoom : NSObject
+{
+    NSString *name;
+    Admin *admin;
+    NSMutableArray* <SubAdmin*> subAdmins;
+    NSMutableArray* <User*> users;
+    Playlist* pl;
+}
+
+- (void)addUser : (User *) user;
+
+
+@end
+
+
+@interface Playlist : NSObject
+{
+    NSMutableArray* <Song*> songQueue;
+    SPTPlaylist *initialPlaylist;
+}
+
+- (BOOL)playFromQueue;
+- (void)copyPlaylistToQueue;
+- (void)chooseBackupPlaylist : (SPTPlaylist *) pl;
+- (void)rearrange;
+
+@end
+
+
+@interface User : SPTSession
+{
+    SongRoom *room;
+}
+
+- (SongRoom *) create_SongRoom :(NSString *) name : (Playlist *) pl;
+- (void)joinSongRoom : (SongRoom *) sr;
+- (void)requestSong : (Song *) s;
+- (BOOL)voteSong : (Song *) sr : (Vote) upDown;
+
+@end
+
+
+@interface SubAdmin : User
+{
+    
+}
+
+- (void)deleteSong : (NSNumber *) songID;
+- (void)removeUser : (User *) user;
+
+@end
+
+
+@interface Admin : SubAdmin
+{
+    
+}
+
+- (void)moveSong : (Playlist *) pl : (Song *) s : (NSNumber *) newPos;
+- (SubAdmin *) makeSubAdmin : (User *) user;
+
+@end
 
 
 #endif
