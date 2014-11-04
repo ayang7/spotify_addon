@@ -10,6 +10,8 @@
 	<string>Playlist Manager</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
+		<key>4eb230b9-fdec-e5d3-3054-ce57b7db7bff++505</key>
+		<string>https://github.com/robbiehanson/CocoaHTTPServer/trunk</string>
 		<key>7105B37C8B76A2675C642F4B4A891E5E5FDF2373</key>
 		<string>https://github.com/mlandgrebe/spotify_addon.git</string>
 	</dict>
@@ -17,8 +19,15 @@
 	<string>Playlist Manager/Playlist Manager.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
+		<key>4eb230b9-fdec-e5d3-3054-ce57b7db7bff++505</key>
+		<string>../../../Playlist%20Manager/Playlist%20Manager/Server/CocoaHTTPServer/</string>
 		<key>7105B37C8B76A2675C642F4B4A891E5E5FDF2373</key>
 		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>4eb230b9-fdec-e5d3-3054-ce57b7db7bff++505</key>
+		<string>https://github.com/robbiehanson/CocoaHTTPServer</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/mlandgrebe/spotify_addon.git</string>
@@ -28,6 +37,14 @@
 	<string>7105B37C8B76A2675C642F4B4A891E5E5FDF2373</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>4eb230b9-fdec-e5d3-3054-ce57b7db7bff++505</string>
+			<key>IDESourceControlWCCName</key>
+			<string>CocoaHTTPServer</string>
+		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>

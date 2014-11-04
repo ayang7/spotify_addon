@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4F9521081A09780100BC3838 /* PlaylistTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F9521071A09780100BC3838 /* PlaylistTests.m */; };
+		4F9521151A097A8200BC3838 /* Playlist.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F9521141A097A8200BC3838 /* Playlist.m */; };
+		4F9521181A097CB600BC3838 /* Song.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F9521171A097CB600BC3838 /* Song.m */; };
+		4F95211A1A0982BF00BC3838 /* SongTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F9521191A0982BF00BC3838 /* SongTests.m */; };
+		4F9521201A0985E800BC3838 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F95211F1A0985E800BC3838 /* User.m */; };
 		5221C34E1A06BA6A00E799E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5221C34D1A06BA6A00E799E4 /* main.m */; };
 		5221C3511A06BA6A00E799E4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5221C3501A06BA6A00E799E4 /* AppDelegate.m */; };
 		5221C3541A06BA6A00E799E4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5221C3531A06BA6A00E799E4 /* ViewController.m */; };
@@ -226,6 +231,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4F9521071A09780100BC3838 /* PlaylistTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PlaylistTests.m; sourceTree = "<group>"; };
+		4F9521131A097A8200BC3838 /* Playlist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Playlist.h; sourceTree = "<group>"; };
+		4F9521141A097A8200BC3838 /* Playlist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Playlist.m; sourceTree = "<group>"; };
+		4F9521161A097CB600BC3838 /* Song.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Song.h; sourceTree = "<group>"; };
+		4F9521171A097CB600BC3838 /* Song.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Song.m; sourceTree = "<group>"; };
+		4F9521191A0982BF00BC3838 /* SongTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongTests.m; sourceTree = "<group>"; };
+		4F95211E1A0985E800BC3838 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		4F95211F1A0985E800BC3838 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		5221C3481A06BA6A00E799E4 /* Playlist Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Playlist Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5221C34C1A06BA6A00E799E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5221C34D1A06BA6A00E799E4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -491,6 +504,12 @@
 				5221C3721A06BBBB00E799E4 /* UsersAdmins.m */,
 				5221C3501A06BA6A00E799E4 /* AppDelegate.m */,
 				5221C3521A06BA6A00E799E4 /* ViewController.h */,
+				4F95211E1A0985E800BC3838 /* User.h */,
+				4F95211F1A0985E800BC3838 /* User.m */,
+				4F9521131A097A8200BC3838 /* Playlist.h */,
+				4F9521141A097A8200BC3838 /* Playlist.m */,
+				4F9521161A097CB600BC3838 /* Song.h */,
+				4F9521171A097CB600BC3838 /* Song.m */,
 				834BCE251A06D210001A8878 /* Server */,
 				5221C3531A06BA6A00E799E4 /* ViewController.m */,
 				5221C3551A06BA6A00E799E4 /* Main.storyboard */,
@@ -514,6 +533,8 @@
 			isa = PBXGroup;
 			children = (
 				5221C3671A06BA6A00E799E4 /* Playlist_ManagerTests.m */,
+				4F9521071A09780100BC3838 /* PlaylistTests.m */,
+				4F9521191A0982BF00BC3838 /* SongTests.m */,
 				5221C3651A06BA6A00E799E4 /* Supporting Files */,
 			);
 			path = "Playlist ManagerTests";
@@ -1379,6 +1400,8 @@
 				834BCFB11A06D211001A8878 /* DDTTYLogger.m in Sources */,
 				834BCF771A06D211001A8878 /* MyHTTPConnection.m in Sources */,
 				834BCF841A06D211001A8878 /* WebSocketTest.js in Sources */,
+				4F9521181A097CB600BC3838 /* Song.m in Sources */,
+				4F9521201A0985E800BC3838 /* User.m in Sources */,
 				834BCF981A06D211001A8878 /* main.m in Sources */,
 				834BCFB31A06D211001A8878 /* DispatchQueueLogFormatter.m in Sources */,
 				834BCF8C1A06D211001A8878 /* MyHTTPConnection.m in Sources */,
@@ -1397,6 +1420,7 @@
 				834BCF681A06D211001A8878 /* AppDelegate.m in Sources */,
 				834BCF501A06D211001A8878 /* DynamicServerAppDelegate.m in Sources */,
 				834BCF4A1A06D211001A8878 /* DAVResponse.m in Sources */,
+				4F9521151A097A8200BC3838 /* Playlist.m in Sources */,
 				834BCFAD1A06D211001A8878 /* DDAbstractDatabaseLogger.m in Sources */,
 				834BCF381A06D211001A8878 /* DDData.m in Sources */,
 				834BCF591A06D211001A8878 /* iPhoneHTTPServerViewController.m in Sources */,
@@ -1433,6 +1457,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5221C3681A06BA6A00E799E4 /* Playlist_ManagerTests.m in Sources */,
+				4F95211A1A0982BF00BC3838 /* SongTests.m in Sources */,
+				4F9521081A09780100BC3838 /* PlaylistTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
