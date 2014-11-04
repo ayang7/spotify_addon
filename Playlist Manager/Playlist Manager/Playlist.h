@@ -30,10 +30,8 @@
 
 - (void)rearrange;
 
-- (void)addSongToQueue:(Song *)song;
+- (bool)addSongToQueue:(Song *)song;
 
 - (Song *)findSongByTrackID:(int)trackID;
-
-- (bool)songInQueue:(Song *)song;
 
 @end

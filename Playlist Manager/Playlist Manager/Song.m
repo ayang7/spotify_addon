@@ -8,6 +8,8 @@
 
 #import "Song.h"
 
+#import "Vote.h"
+
 @interface Song ()
 
 @property (nonatomic, copy) NSMutableArray *votedUsers;
