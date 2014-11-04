@@ -11,6 +11,7 @@
 
 #import "Playlist.h"
 #import "Song.h"
+#import "User.h"
 
 Song *testSong;
 
@@ -24,14 +25,16 @@ SPTPlaylist *initialSPTPlaylist;
 
 @implementation PlaylistTests
 
-- (void)setUp {
+- (void)setUp
+{
     [super setUp];
     
     playlist = [[Playlist alloc] initWithInitialPlaylist:initialSPTPlaylist];
     testSong = [[Song alloc] initWithTrackID:1234];
 }
 
-- (void)tearDown {
+- (void)tearDown
+{
     playlist = nil;
     
     [super tearDown];
@@ -44,8 +47,9 @@ SPTPlaylist *initialSPTPlaylist;
 
 - (void)testAddSongToQueue
 {
-    [playlist addSongToQueue:testSong];
-    XCTAssert([playlist songInQueue:testSong], @"Song not found in queue after being added");
+    XCTAssert([playlist addSongToQueue:testSong], @"Song was not added");
+    XCTAssert([playlist findSongByTrackID:testSong.trackID], @"Song not found in queue after being added");
+    XCTAssertFalse([playlist addSongToQueue:testSong], @"Song was added twice to queue");
 }
 
 - (void)testPlayFromQueue
@@ -54,7 +58,52 @@ SPTPlaylist *initialSPTPlaylist;
     Song *playedSong = [playlist playFromQueue];
     
     XCTAssertEqualObjects(playedSong, topSong, @"Played song does not match top song");
-    XCTAssertFalse([playlist songInQueue:topSong], @"Top song is still in queue after being played");
+    XCTAssertNil([playlist findSongByTrackID:topSong.trackID], @"Top song is still in queue after being played");
+}
+
+- (void)testFindSongByTrackID
+{
+    [playlist addSongToQueue:testSong];
+    
+    Song *foundSong = [playlist findSongByTrackID:testSong.trackID];
+    XCTAssertEqualObjects(foundSong, testSong, "Found song does not match");
+    
+    Song *notFoundSong = [playlist findSongByTrackID:9999];
+    XCTAssertNil(notFoundSong, "Song was found even though track ID was invalid");
+}
+
+- (void)testRearrange
+{
+    NSMutableArray *voters = [[NSMutableArray alloc] init];
+    NSMutableArray *songs = [[NSMutableArray alloc] init];
+    for (int i = 0; i < 10; i++)
+    {
+        Song *song = [[Song alloc] initWithTrackID:i];
+        [songs addObject:song];
+        [playlist addSongToQueue:song];
+        
+        User *voter = [[User alloc] init];
+        [voters addObject:voter];
+    }
+    
+    NSArray *scores = @[@(-3), @5, @2, @6, @(-9), @1, @0, @7, @4, @(-4)];
+    for (int k = 0; k < scores.count; k++)
+    {
+        int s = [scores[k] intValue];
+        for (int i = 0; i < abs(s); i++)
+        {
+            if (s > 0)
+            {
+                [songs[k] receiveVote:YES fromUser:voters[i]];
+            }
+            else
+            {
+                [songs[k] receiveVote:NO fromUser:voters[i]];
+            }
+        }
+    }
+    
+    
 }
 
 @end

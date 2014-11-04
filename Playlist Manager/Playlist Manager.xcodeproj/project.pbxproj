@@ -12,6 +12,8 @@
 		4F9521181A097CB600BC3838 /* Song.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F9521171A097CB600BC3838 /* Song.m */; };
 		4F95211A1A0982BF00BC3838 /* SongTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F9521191A0982BF00BC3838 /* SongTests.m */; };
 		4F9521201A0985E800BC3838 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F95211F1A0985E800BC3838 /* User.m */; };
+		4F9521261A098DDE00BC3838 /* Vote.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F9521251A098DDE00BC3838 /* Vote.m */; };
+		4F9521291A0990BC00BC3838 /* VoteBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F9521281A0990BC00BC3838 /* VoteBox.m */; };
 		5221C34E1A06BA6A00E799E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5221C34D1A06BA6A00E799E4 /* main.m */; };
 		5221C3511A06BA6A00E799E4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5221C3501A06BA6A00E799E4 /* AppDelegate.m */; };
 		5221C3541A06BA6A00E799E4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5221C3531A06BA6A00E799E4 /* ViewController.m */; };
@@ -240,6 +242,10 @@
 		4F9521191A0982BF00BC3838 /* SongTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongTests.m; sourceTree = "<group>"; };
 		4F95211E1A0985E800BC3838 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		4F95211F1A0985E800BC3838 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		4F9521241A098DDE00BC3838 /* Vote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vote.h; sourceTree = "<group>"; };
+		4F9521251A098DDE00BC3838 /* Vote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vote.m; sourceTree = "<group>"; };
+		4F9521271A0990BC00BC3838 /* VoteBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoteBox.h; sourceTree = "<group>"; };
+		4F9521281A0990BC00BC3838 /* VoteBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoteBox.m; sourceTree = "<group>"; };
 		5221C3481A06BA6A00E799E4 /* Playlist Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Playlist Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5221C34C1A06BA6A00E799E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5221C34D1A06BA6A00E799E4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -513,10 +519,14 @@
 				5221C3521A06BA6A00E799E4 /* ViewController.h */,
 				4F95211E1A0985E800BC3838 /* User.h */,
 				4F95211F1A0985E800BC3838 /* User.m */,
-				4F9521131A097A8200BC3838 /* Playlist.h */,
-				4F9521141A097A8200BC3838 /* Playlist.m */,
+				4F9521241A098DDE00BC3838 /* Vote.h */,
+				4F9521251A098DDE00BC3838 /* Vote.m */,
+				4F9521271A0990BC00BC3838 /* VoteBox.h */,
+				4F9521281A0990BC00BC3838 /* VoteBox.m */,
 				4F9521161A097CB600BC3838 /* Song.h */,
 				4F9521171A097CB600BC3838 /* Song.m */,
+				4F9521131A097A8200BC3838 /* Playlist.h */,
+				4F9521141A097A8200BC3838 /* Playlist.m */,
 				834BCE251A06D210001A8878 /* Server */,
 				5221C3531A06BA6A00E799E4 /* ViewController.m */,
 				5221C3551A06BA6A00E799E4 /* Main.storyboard */,
@@ -1391,6 +1401,7 @@
 				834BCF3C1A06D211001A8878 /* HTTPConnection.m in Sources */,
 				5221C3511A06BA6A00E799E4 /* AppDelegate.m in Sources */,
 				834BCFA01A06D211001A8878 /* WebSocketTest2.js in Sources */,
+				4F9521261A098DDE00BC3838 /* Vote.m in Sources */,
 				834BCF3A1A06D211001A8878 /* DDRange.m in Sources */,
 				834BCF401A06D211001A8878 /* MultipartMessageHeader.m in Sources */,
 				834BCF5D1A06D211001A8878 /* main.m in Sources */,
@@ -1435,6 +1446,7 @@
 				834BCF381A06D211001A8878 /* DDData.m in Sources */,
 				834BCF591A06D211001A8878 /* iPhoneHTTPServerViewController.m in Sources */,
 				834BCF3D1A06D211001A8878 /* HTTPMessage.m in Sources */,
+				4F9521291A0990BC00BC3838 /* VoteBox.m in Sources */,
 				834BCF3F1A06D211001A8878 /* MultipartFormDataParser.m in Sources */,
 				5221C34E1A06BA6A00E799E4 /* main.m in Sources */,
 				834BCF801A06D211001A8878 /* MyWebSocket.m in Sources */,
