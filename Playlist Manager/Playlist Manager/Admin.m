@@ -13,12 +13,10 @@
 @interface  Admin ()
 
 @end
+
 @implementation Admin
 
-
-- (void)joinSongRoom : (SongRoom *) sr;
-- (void)requestSong : (Song *) s;
-- (BOOL)voteSong : (Song *) sr : (Vote) upDown;
-
+- (void)moveSong : (Playlist *) pl : (Song *) s : (NSNumber *) newPos {}
+- (SubAdmin *) makeSubAdmin : (User *) user {}
 
 @end
