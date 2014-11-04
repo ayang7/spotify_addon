@@ -504,6 +504,8 @@
 			children = (
 				5221C34F1A06BA6A00E799E4 /* AppDelegate.h */,
 				5221C3711A06BBA300E799E4 /* UsersAdmins.h */,
+				82160EBA1A098F3F003D9830 /* Admin.h */,
+				82160EC51A099026003D9830 /* Admin.m */,
 				5221C3721A06BBBB00E799E4 /* UsersAdmins.m */,
 				5226B78E1A098F4200C1D8CC /* SubAdmin.h */,
 				5226B7991A098F5F00C1D8CC /* SubAdmin.m */,
@@ -539,6 +541,7 @@
 			children = (
 				5221C3671A06BA6A00E799E4 /* Playlist_ManagerTests.m */,
 				4F9521071A09780100BC3838 /* PlaylistTests.m */,
+				82160EC71A0991C0003D9830 /* AdminTests.m */,
 				4F9521191A0982BF00BC3838 /* SongTests.m */,
 				5221C3651A06BA6A00E799E4 /* Supporting Files */,
 			);
@@ -1416,6 +1419,7 @@
 				834BCFB21A06D211001A8878 /* ContextFilterLogFormatter.m in Sources */,
 				5221C3731A06BBBB00E799E4 /* UsersAdmins.m in Sources */,
 				834BCF7F1A06D211001A8878 /* MyHTTPConnection.m in Sources */,
+				82160EC61A099026003D9830 /* Admin.m in Sources */,
 				834BCF411A06D211001A8878 /* MultipartMessageHeaderField.m in Sources */,
 				5226B79A1A098F5F00C1D8CC /* SubAdmin.m in Sources */,
 				834BCF721A06D211001A8878 /* DDKeychain.m in Sources */,
@@ -1465,6 +1469,7 @@
 				5221C3681A06BA6A00E799E4 /* Playlist_ManagerTests.m in Sources */,
 				4F95211A1A0982BF00BC3838 /* SongTests.m in Sources */,
 				4F9521081A09780100BC3838 /* PlaylistTests.m in Sources */,
+				82160EC81A0991C0003D9830 /* AdminTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
