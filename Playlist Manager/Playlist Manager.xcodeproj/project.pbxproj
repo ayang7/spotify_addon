@@ -21,6 +21,7 @@
 		5221C3681A06BA6A00E799E4 /* Playlist_ManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5221C3671A06BA6A00E799E4 /* Playlist_ManagerTests.m */; };
 		5221C3731A06BBBB00E799E4 /* UsersAdmins.m in Sources */ = {isa = PBXBuildFile; fileRef = 5221C3721A06BBBB00E799E4 /* UsersAdmins.m */; };
 		5221C38E1A06C0E600E799E4 /* Spotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5221C38D1A06C0E500E799E4 /* Spotify.framework */; };
+		5226B79A1A098F5F00C1D8CC /* SubAdmin.m in Sources */ = {isa = PBXBuildFile; fileRef = 5226B7991A098F5F00C1D8CC /* SubAdmin.m */; };
 		834BCF361A06D211001A8878 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 834BCE271A06D210001A8878 /* .gitignore */; };
 		834BCF371A06D211001A8878 /* .hgignore in Resources */ = {isa = PBXBuildFile; fileRef = 834BCE281A06D210001A8878 /* .hgignore */; };
 		834BCF381A06D211001A8878 /* DDData.m in Sources */ = {isa = PBXBuildFile; fileRef = 834BCE2C1A06D210001A8878 /* DDData.m */; };
@@ -255,6 +256,8 @@
 		5221C3711A06BBA300E799E4 /* UsersAdmins.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UsersAdmins.h; sourceTree = "<group>"; };
 		5221C3721A06BBBB00E799E4 /* UsersAdmins.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UsersAdmins.m; sourceTree = "<group>"; };
 		5221C38D1A06C0E500E799E4 /* Spotify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Spotify.framework; sourceTree = "<group>"; };
+		5226B78E1A098F4200C1D8CC /* SubAdmin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubAdmin.h; sourceTree = "<group>"; };
+		5226B7991A098F5F00C1D8CC /* SubAdmin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubAdmin.m; sourceTree = "<group>"; };
 		834BCE271A06D210001A8878 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		834BCE281A06D210001A8878 /* .hgignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .hgignore; sourceTree = "<group>"; };
 		834BCE2B1A06D210001A8878 /* DDData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDData.h; sourceTree = "<group>"; };
@@ -502,6 +505,8 @@
 				5221C34F1A06BA6A00E799E4 /* AppDelegate.h */,
 				5221C3711A06BBA300E799E4 /* UsersAdmins.h */,
 				5221C3721A06BBBB00E799E4 /* UsersAdmins.m */,
+				5226B78E1A098F4200C1D8CC /* SubAdmin.h */,
+				5226B7991A098F5F00C1D8CC /* SubAdmin.m */,
 				5221C3501A06BA6A00E799E4 /* AppDelegate.m */,
 				5221C3521A06BA6A00E799E4 /* ViewController.h */,
 				4F95211E1A0985E800BC3838 /* User.h */,
@@ -1412,6 +1417,7 @@
 				5221C3731A06BBBB00E799E4 /* UsersAdmins.m in Sources */,
 				834BCF7F1A06D211001A8878 /* MyHTTPConnection.m in Sources */,
 				834BCF411A06D211001A8878 /* MultipartMessageHeaderField.m in Sources */,
+				5226B79A1A098F5F00C1D8CC /* SubAdmin.m in Sources */,
 				834BCF721A06D211001A8878 /* DDKeychain.m in Sources */,
 				834BCF4B1A06D211001A8878 /* DELETEResponse.m in Sources */,
 				834BCF711A06D211001A8878 /* AppDelegate.m in Sources */,

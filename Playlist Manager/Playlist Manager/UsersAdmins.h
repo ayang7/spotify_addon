@@ -73,15 +73,7 @@ typedef enum{
 @end
 
 
-@interface SubAdmin : User
-{
-    
-}
 
-- (void)deleteSong : (NSNumber *) songID;
-- (void)removeUser : (User *) user;
-
-@end
 
 
 @interface Admin : SubAdmin
