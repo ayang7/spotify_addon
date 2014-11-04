@@ -7,7 +7,21 @@
 //
 
 #import "User.h"
+#import "Song.h"
+#import "SongRoom.h"
+
+@interface  User ()
+
+@property SongRoom* room;
+
+@end
 
 @implementation User
+
+
+- (void)joinSongRoom : (SongRoom *) sr {}
+- (void)requestSong : (Song *) s {}
+- (BOOL)voteSong : (Song *) sr : (Vote) upDown {}
+
 
 @end

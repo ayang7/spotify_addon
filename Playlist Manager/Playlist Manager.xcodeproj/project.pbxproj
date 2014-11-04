@@ -23,6 +23,8 @@
 		5221C3681A06BA6A00E799E4 /* Playlist_ManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5221C3671A06BA6A00E799E4 /* Playlist_ManagerTests.m */; };
 		5221C3731A06BBBB00E799E4 /* UsersAdmins.m in Sources */ = {isa = PBXBuildFile; fileRef = 5221C3721A06BBBB00E799E4 /* UsersAdmins.m */; };
 		5221C38E1A06C0E600E799E4 /* Spotify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5221C38D1A06C0E500E799E4 /* Spotify.framework */; };
+		82160EC61A099026003D9830 /* Admin.m in Sources */ = {isa = PBXBuildFile; fileRef = 82160EC51A099026003D9830 /* Admin.m */; };
+		82160EC81A0991C0003D9830 /* AdminTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 82160EC71A0991C0003D9830 /* AdminTests.m */; };
 		834BCF361A06D211001A8878 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 834BCE271A06D210001A8878 /* .gitignore */; };
 		834BCF371A06D211001A8878 /* .hgignore in Resources */ = {isa = PBXBuildFile; fileRef = 834BCE281A06D210001A8878 /* .hgignore */; };
 		834BCF381A06D211001A8878 /* DDData.m in Sources */ = {isa = PBXBuildFile; fileRef = 834BCE2C1A06D210001A8878 /* DDData.m */; };
@@ -261,6 +263,9 @@
 		5221C3711A06BBA300E799E4 /* UsersAdmins.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UsersAdmins.h; sourceTree = "<group>"; };
 		5221C3721A06BBBB00E799E4 /* UsersAdmins.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UsersAdmins.m; sourceTree = "<group>"; };
 		5221C38D1A06C0E500E799E4 /* Spotify.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Spotify.framework; sourceTree = "<group>"; };
+		82160EBA1A098F3F003D9830 /* Admin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Admin.h; sourceTree = "<group>"; };
+		82160EC51A099026003D9830 /* Admin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Admin.m; sourceTree = "<group>"; };
+		82160EC71A0991C0003D9830 /* AdminTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdminTests.m; sourceTree = "<group>"; };
 		834BCE271A06D210001A8878 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		834BCE281A06D210001A8878 /* .hgignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .hgignore; sourceTree = "<group>"; };
 		834BCE2B1A06D210001A8878 /* DDData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDData.h; sourceTree = "<group>"; };
@@ -507,6 +512,8 @@
 			children = (
 				5221C34F1A06BA6A00E799E4 /* AppDelegate.h */,
 				5221C3711A06BBA300E799E4 /* UsersAdmins.h */,
+				82160EBA1A098F3F003D9830 /* Admin.h */,
+				82160EC51A099026003D9830 /* Admin.m */,
 				5221C3721A06BBBB00E799E4 /* UsersAdmins.m */,
 				5221C3501A06BA6A00E799E4 /* AppDelegate.m */,
 				5221C3521A06BA6A00E799E4 /* ViewController.h */,
@@ -544,6 +551,7 @@
 			children = (
 				5221C3671A06BA6A00E799E4 /* Playlist_ManagerTests.m */,
 				4F9521071A09780100BC3838 /* PlaylistTests.m */,
+				82160EC71A0991C0003D9830 /* AdminTests.m */,
 				4F9521191A0982BF00BC3838 /* SongTests.m */,
 				5221C3651A06BA6A00E799E4 /* Supporting Files */,
 			);
@@ -1422,6 +1430,7 @@
 				834BCFB21A06D211001A8878 /* ContextFilterLogFormatter.m in Sources */,
 				5221C3731A06BBBB00E799E4 /* UsersAdmins.m in Sources */,
 				834BCF7F1A06D211001A8878 /* MyHTTPConnection.m in Sources */,
+				82160EC61A099026003D9830 /* Admin.m in Sources */,
 				834BCF411A06D211001A8878 /* MultipartMessageHeaderField.m in Sources */,
 				834BCF721A06D211001A8878 /* DDKeychain.m in Sources */,
 				834BCF4B1A06D211001A8878 /* DELETEResponse.m in Sources */,
@@ -1471,6 +1480,7 @@
 				5221C3681A06BA6A00E799E4 /* Playlist_ManagerTests.m in Sources */,
 				4F95211A1A0982BF00BC3838 /* SongTests.m in Sources */,
 				4F9521081A09780100BC3838 /* PlaylistTests.m in Sources */,
+				82160EC81A0991C0003D9830 /* AdminTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
