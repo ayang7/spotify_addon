@@ -18,10 +18,29 @@
 
 @implementation User
 
+- (instancetype)initWithUsername:(NSString *)name
+{
+    
+}
 
-- (void)joinSongRoom : (SongRoom *) sr {}
-- (void)requestSong : (Song *) s {}
-- (BOOL)voteSong : (Song *) sr : (Vote) upDown {}
+- (SongRoom *) create_SongRoom:(NSString *)name :(Playlist *)pl
+{
+    
+}
 
+- (void)joinSongRoom : (SongRoom *) sr
+{
+    
+}
+
+- (void)requestSong : (Song *) s
+{
+    
+}
+
+- (BOOL)voteSong : (Song *) sr : (Vote) upDown
+{
+    
+}
 
 @end

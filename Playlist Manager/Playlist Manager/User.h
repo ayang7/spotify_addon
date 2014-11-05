@@ -20,6 +20,9 @@ typedef enum{
     SongRoom *room;
 }
 
+// This is for testing
+- (instancetype)initWithUsername:(NSString *) name;
+
 - (SongRoom *) create_SongRoom :(NSString *) name : (Playlist *) pl;
 - (void)joinSongRoom : (SongRoom *) sr;
 - (void)requestSong : (Song *) s;

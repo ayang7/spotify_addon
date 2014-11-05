@@ -26,6 +26,8 @@
 		5226B7D81A09C06A00C1D8CC /* SubAdminTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5226B7D71A09C06A00C1D8CC /* SubAdminTests.m */; };
 		5226B7DC1A09CC3300C1D8CC /* SongRoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 5226B7DB1A09CC3300C1D8CC /* SongRoom.m */; };
 		5226B7DE1A09D41600C1D8CC /* SongRoomTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5226B7DD1A09D41600C1D8CC /* SongRoomTests.m */; };
+		5226B7E01A09D86900C1D8CC /* UserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5226B7DF1A09D86900C1D8CC /* UserTests.m */; };
+		5226B9A81A09D9C000C1D8CC /* Admin.m in Sources */ = {isa = PBXBuildFile; fileRef = 5226B9191A09D9BF00C1D8CC /* Admin.m */; };
 		834BCF361A06D211001A8878 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 834BCE271A06D210001A8878 /* .gitignore */; };
 		834BCF371A06D211001A8878 /* .hgignore in Resources */ = {isa = PBXBuildFile; fileRef = 834BCE281A06D210001A8878 /* .hgignore */; };
 		834BCF381A06D211001A8878 /* DDData.m in Sources */ = {isa = PBXBuildFile; fileRef = 834BCE2C1A06D210001A8878 /* DDData.m */; };
@@ -268,6 +270,9 @@
 		5226B7DA1A09CC1900C1D8CC /* SongRoom.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SongRoom.h; sourceTree = "<group>"; };
 		5226B7DB1A09CC3300C1D8CC /* SongRoom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongRoom.m; sourceTree = "<group>"; };
 		5226B7DD1A09D41600C1D8CC /* SongRoomTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongRoomTests.m; sourceTree = "<group>"; };
+		5226B7DF1A09D86900C1D8CC /* UserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserTests.m; sourceTree = "<group>"; };
+		5226B9181A09D9BF00C1D8CC /* Admin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Admin.h; path = "Playlist ManagerTests/Admin.h"; sourceTree = SOURCE_ROOT; };
+		5226B9191A09D9BF00C1D8CC /* Admin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Admin.m; path = "Playlist ManagerTests/Admin.m"; sourceTree = SOURCE_ROOT; };
 		834BCE271A06D210001A8878 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		834BCE281A06D210001A8878 /* .hgignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .hgignore; sourceTree = "<group>"; };
 		834BCE2B1A06D210001A8878 /* DDData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDData.h; sourceTree = "<group>"; };
@@ -512,6 +517,8 @@
 		5221C34A1A06BA6A00E799E4 /* Playlist Manager */ = {
 			isa = PBXGroup;
 			children = (
+				5226B9181A09D9BF00C1D8CC /* Admin.h */,
+				5226B9191A09D9BF00C1D8CC /* Admin.m */,
 				5221C34F1A06BA6A00E799E4 /* AppDelegate.h */,
 				5221C3501A06BA6A00E799E4 /* AppDelegate.m */,
 				5221C3531A06BA6A00E799E4 /* ViewController.m */,
@@ -551,6 +558,7 @@
 		5221C3641A06BA6A00E799E4 /* Playlist ManagerTests */ = {
 			isa = PBXGroup;
 			children = (
+				5226B7DF1A09D86900C1D8CC /* UserTests.m */,
 				5221C3671A06BA6A00E799E4 /* Playlist_ManagerTests.m */,
 				4F9521071A09780100BC3838 /* PlaylistTests.m */,
 				4F9521191A0982BF00BC3838 /* SongTests.m */,
@@ -1400,6 +1408,7 @@
 				5221C3541A06BA6A00E799E4 /* ViewController.m in Sources */,
 				834BCFAF1A06D211001A8878 /* DDFileLogger.m in Sources */,
 				834BCF661A06D211001A8878 /* MyHTTPConnection.m in Sources */,
+				5226B9A81A09D9C000C1D8CC /* Admin.m in Sources */,
 				834BCF451A06D211001A8878 /* HTTPErrorResponse.m in Sources */,
 				834BCF3C1A06D211001A8878 /* HTTPConnection.m in Sources */,
 				5221C3511A06BA6A00E799E4 /* AppDelegate.m in Sources */,
@@ -1482,6 +1491,7 @@
 			files = (
 				5226B7D81A09C06A00C1D8CC /* SubAdminTests.m in Sources */,
 				5221C3681A06BA6A00E799E4 /* Playlist_ManagerTests.m in Sources */,
+				5226B7E01A09D86900C1D8CC /* UserTests.m in Sources */,
 				4F95211A1A0982BF00BC3838 /* SongTests.m in Sources */,
 				4F9521081A09780100BC3838 /* PlaylistTests.m in Sources */,
 				5226B7DE1A09D41600C1D8CC /* SongRoomTests.m in Sources */,
