@@ -32,12 +32,12 @@ SongRoom *room;
 
 - (void)tearDown
 {
-    song = nil;
+    [super tearDown];
 }
 
 - (void)addUser : (User *) user{
     [room addUser:testUser];
-    XCTAssertEqualObjects(SongRoom.users[0], testUser, @"Failed to add user");
+    XCTAssertEqualObjects(room.users[0], testUser, @"Failed to add user");
 }
 
 @end
