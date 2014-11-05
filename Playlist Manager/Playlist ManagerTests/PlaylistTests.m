@@ -86,7 +86,11 @@ SPTPlaylist *initialSPTPlaylist;
         [voters addObject:voter];
     }
     
+    // Assign votes to songs
+    //                     7    2   4   1     9    5   6   0   3     8
+    //                     0    1   2   3     4    5   6   7   8     9
     NSArray *scores = @[@(-3), @5, @2, @6, @(-9), @1, @0, @7, @4, @(-4)];
+    NSArray *songIndices = @[@7, @2, @4, @1, @9, @5, @6, @0, @3, @8];
     for (int k = 0; k < scores.count; k++)
     {
         int s = [scores[k] intValue];
@@ -103,7 +107,13 @@ SPTPlaylist *initialSPTPlaylist;
         }
     }
     
-    
+    // Rearrange playlist and check if songs are properly ordered by vote score
+    [playlist rearrange];
+    for (int i = 0; i < 10; i++)
+    {
+        int songIndex = [songIndices[i] intValue];
+        XCTAssertEqualObjects(songs[songIndex], playlist.songQueue[i], @"Songs are out of order");
+    }
 }
 
 @end

@@ -7,3 +7,40 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <XCTest/XCTest.h>
+
+#import "Song.h"
+#import "User.h"
+#import "SongRoom.h"
+
+
+User *testUser;
+SongRoom *room;
+
+@interface SongRoomTests : XCTestCase
+
+@end
+
+@implementation SongRoomTests
+
+- (void)setUp
+{
+    room = [[SongRoom alloc] init];
+    [super setUp];
+    
+}
+
+- (void)tearDown
+{
+    [super tearDown];
+}
+
+- (void)addUser : (User *) user{
+    [room addUser:testUser];
+    XCTAssertEqualObjects(room.users[0], testUser, @"Failed to add user");
+}
+
+@end
+
+
+
