@@ -11,9 +11,9 @@
 
 @interface SubAdmin : User
 
-- (void)deleteSong:(NSNumber *) songID;
+- (BOOL)deleteSong:(NSNumber *) songID;
 
-- (void)removeUser:(User *) user;
+- (BOOL)removeUser:(User *) user;
 
 @end
 

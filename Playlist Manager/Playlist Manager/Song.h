@@ -7,6 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "User.h"
+
+typedef enum{
+    UP,
+    DOWN
+}Vote;
+
+struct userWithVote
+{
+    User *user;
+    Vote vote;
+} userWithVote;
 
 @class User;
 
@@ -21,3 +33,4 @@
 - (bool)receiveVote:(bool)vote fromUser:(User *)user;
 
 @end
+

@@ -47,6 +47,7 @@ Song *song;
     
     XCTAssert([song receiveVote:YES fromUser:voter1], @"Vote failed");
     XCTAssertEqual(song.votes, 1, @"Upvote was not tallied correctly");
+    XCTAssertEqual(song.votedUsers[0].vote, UP, @"User Upvote was not recorded correctly");
     
     // Vote again with same user
     XCTAssertFalse([song receiveVote:YES fromUser:voter1], @"User was able to vote again");
@@ -55,9 +56,11 @@ Song *song;
     // Change vote
     XCTAssert([song receiveVote:NO fromUser:voter1], @"User was unable to change vote");
     XCTAssertEqual(song.votes, -1, @"Upvote to downvote change was not tallied correctly");
+    XCTAssertEqual(song.votedUsers[1].vote, DOWN, @"User Downvote was not recorded correctly");
     
     XCTAssert([song receiveVote:NO fromUser:voter2], "@Downvote failed");
     XCTAssertEqual(song.votes, -2, @"Downvote was not tallied correctly");
+    
 }
 
 @end

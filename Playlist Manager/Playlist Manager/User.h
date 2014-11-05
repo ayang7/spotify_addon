@@ -10,10 +10,6 @@
 #import "SongRoom.h"
 #import <Foundation/Foundation.h>
 
-typedef enum{
-    UP,
-    DOWN
-}Vote;
 
 @interface User : SPTSession
 {

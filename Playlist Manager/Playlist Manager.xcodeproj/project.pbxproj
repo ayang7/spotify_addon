@@ -12,8 +12,6 @@
 		4F9521181A097CB600BC3838 /* Song.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F9521171A097CB600BC3838 /* Song.m */; };
 		4F95211A1A0982BF00BC3838 /* SongTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F9521191A0982BF00BC3838 /* SongTests.m */; };
 		4F9521201A0985E800BC3838 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F95211F1A0985E800BC3838 /* User.m */; };
-		4F9521261A098DDE00BC3838 /* Vote.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F9521251A098DDE00BC3838 /* Vote.m */; };
-		4F9521291A0990BC00BC3838 /* VoteBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F9521281A0990BC00BC3838 /* VoteBox.m */; };
 		5221C34E1A06BA6A00E799E4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5221C34D1A06BA6A00E799E4 /* main.m */; };
 		5221C3511A06BA6A00E799E4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5221C3501A06BA6A00E799E4 /* AppDelegate.m */; };
 		5221C3541A06BA6A00E799E4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5221C3531A06BA6A00E799E4 /* ViewController.m */; };
@@ -29,8 +27,6 @@
 		5226B7E01A09D86900C1D8CC /* UserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5226B7DF1A09D86900C1D8CC /* UserTests.m */; };
 		5226B9A81A09D9C000C1D8CC /* Admin.m in Sources */ = {isa = PBXBuildFile; fileRef = 5226B9191A09D9BF00C1D8CC /* Admin.m */; };
 		52B2BF881A0ADEFD00A61242 /* AdminTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B2BF871A0ADEFD00A61242 /* AdminTests.m */; };
-		52B2BF941A0AE06A00A61242 /* VoteBoxTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B2BF931A0AE06A00A61242 /* VoteBoxTests.m */; };
-		52B2BF961A0AE08300A61242 /* VoteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B2BF951A0AE08300A61242 /* VoteTests.m */; };
 		834BCF361A06D211001A8878 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 834BCE271A06D210001A8878 /* .gitignore */; };
 		834BCF371A06D211001A8878 /* .hgignore in Resources */ = {isa = PBXBuildFile; fileRef = 834BCE281A06D210001A8878 /* .hgignore */; };
 		834BCF381A06D211001A8878 /* DDData.m in Sources */ = {isa = PBXBuildFile; fileRef = 834BCE2C1A06D210001A8878 /* DDData.m */; };
@@ -249,10 +245,6 @@
 		4F9521191A0982BF00BC3838 /* SongTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongTests.m; sourceTree = "<group>"; };
 		4F95211E1A0985E800BC3838 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		4F95211F1A0985E800BC3838 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
-		4F9521241A098DDE00BC3838 /* Vote.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vote.h; sourceTree = "<group>"; };
-		4F9521251A098DDE00BC3838 /* Vote.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vote.m; sourceTree = "<group>"; };
-		4F9521271A0990BC00BC3838 /* VoteBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VoteBox.h; sourceTree = "<group>"; };
-		4F9521281A0990BC00BC3838 /* VoteBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoteBox.m; sourceTree = "<group>"; };
 		5221C3481A06BA6A00E799E4 /* Playlist Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Playlist Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5221C34C1A06BA6A00E799E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5221C34D1A06BA6A00E799E4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -277,8 +269,6 @@
 		5226B9181A09D9BF00C1D8CC /* Admin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Admin.h; path = "Playlist ManagerTests/Admin.h"; sourceTree = SOURCE_ROOT; };
 		5226B9191A09D9BF00C1D8CC /* Admin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Admin.m; path = "Playlist ManagerTests/Admin.m"; sourceTree = SOURCE_ROOT; };
 		52B2BF871A0ADEFD00A61242 /* AdminTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdminTests.m; sourceTree = "<group>"; };
-		52B2BF931A0AE06A00A61242 /* VoteBoxTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoteBoxTests.m; sourceTree = "<group>"; };
-		52B2BF951A0AE08300A61242 /* VoteTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VoteTests.m; sourceTree = "<group>"; };
 		834BCE271A06D210001A8878 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		834BCE281A06D210001A8878 /* .hgignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .hgignore; sourceTree = "<group>"; };
 		834BCE2B1A06D210001A8878 /* DDData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DDData.h; sourceTree = "<group>"; };
@@ -533,10 +523,6 @@
 				5226B7991A098F5F00C1D8CC /* SubAdmin.m */,
 				4F95211E1A0985E800BC3838 /* User.h */,
 				4F95211F1A0985E800BC3838 /* User.m */,
-				4F9521241A098DDE00BC3838 /* Vote.h */,
-				4F9521251A098DDE00BC3838 /* Vote.m */,
-				4F9521271A0990BC00BC3838 /* VoteBox.h */,
-				4F9521281A0990BC00BC3838 /* VoteBox.m */,
 				4F9521161A097CB600BC3838 /* Song.h */,
 				4F9521171A097CB600BC3838 /* Song.m */,
 				5226B7DA1A09CC1900C1D8CC /* SongRoom.h */,
@@ -570,8 +556,6 @@
 				4F9521071A09780100BC3838 /* PlaylistTests.m */,
 				4F9521191A0982BF00BC3838 /* SongTests.m */,
 				5226B7DD1A09D41600C1D8CC /* SongRoomTests.m */,
-				52B2BF951A0AE08300A61242 /* VoteTests.m */,
-				52B2BF931A0AE06A00A61242 /* VoteBoxTests.m */,
 				5226B7D71A09C06A00C1D8CC /* SubAdminTests.m */,
 				5221C3651A06BA6A00E799E4 /* Supporting Files */,
 			);
@@ -1422,7 +1406,6 @@
 				834BCF3C1A06D211001A8878 /* HTTPConnection.m in Sources */,
 				5221C3511A06BA6A00E799E4 /* AppDelegate.m in Sources */,
 				834BCFA01A06D211001A8878 /* WebSocketTest2.js in Sources */,
-				4F9521261A098DDE00BC3838 /* Vote.m in Sources */,
 				834BCF3A1A06D211001A8878 /* DDRange.m in Sources */,
 				834BCF401A06D211001A8878 /* MultipartMessageHeader.m in Sources */,
 				834BCF5D1A06D211001A8878 /* main.m in Sources */,
@@ -1466,7 +1449,6 @@
 				834BCF381A06D211001A8878 /* DDData.m in Sources */,
 				834BCF591A06D211001A8878 /* iPhoneHTTPServerViewController.m in Sources */,
 				834BCF3D1A06D211001A8878 /* HTTPMessage.m in Sources */,
-				4F9521291A0990BC00BC3838 /* VoteBox.m in Sources */,
 				834BCF3F1A06D211001A8878 /* MultipartFormDataParser.m in Sources */,
 				5221C34E1A06BA6A00E799E4 /* main.m in Sources */,
 				834BCF801A06D211001A8878 /* MyWebSocket.m in Sources */,
@@ -1501,11 +1483,9 @@
 				5226B7D81A09C06A00C1D8CC /* SubAdminTests.m in Sources */,
 				52B2BF881A0ADEFD00A61242 /* AdminTests.m in Sources */,
 				5221C3681A06BA6A00E799E4 /* Playlist_ManagerTests.m in Sources */,
-				52B2BF941A0AE06A00A61242 /* VoteBoxTests.m in Sources */,
 				5226B7E01A09D86900C1D8CC /* UserTests.m in Sources */,
 				4F95211A1A0982BF00BC3838 /* SongTests.m in Sources */,
 				4F9521081A09780100BC3838 /* PlaylistTests.m in Sources */,
-				52B2BF961A0AE08300A61242 /* VoteTests.m in Sources */,
 				5226B7DE1A09D41600C1D8CC /* SongRoomTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
