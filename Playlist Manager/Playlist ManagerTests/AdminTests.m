@@ -30,10 +30,13 @@ Playlist * testPlaylist;
 - (void)setUp {
     [super setUp];
     
-    testPlaylist = [[Playlist alloc] initWithInitialPlaylist:initialSPTPlaylist];
-    testSong = [[Song alloc] initWithTrackID:1234];
-    testUser = [[User alloc] initWithUsername:"name1"];
-    
+    testPlaylist = [[Playlist alloc] init];
+    testSong1 = [[Song alloc] initWithTrackID:1234];
+    testSong1 = [[Song alloc] initWithTrackID:5678];
+    [testPlaylist addSongToQueue:testSong1];
+    [testPlaylist addSongToQueue:testSong2];
+    testUser = [[User alloc] initWithUsername:@"userName"];
+    testAdmin = [[Admin alloc] initWithUsername:@"AdminName"];
     // Put setup code here. This method is called before the invocation of each test method in the class.
 }
 
@@ -43,14 +46,18 @@ Playlist * testPlaylist;
 }
 
 - (void)testMoveSong{
-    
-    XCTAssert(<#expression, ...#>)
+    testPlaylist.songQueue[0] = testSong1;
+    testPlaylist.songQueue[1] = testSong2;
+    [testAdmin moveSong:testPlaylist s:testSong1 newPos:@2];
+    XCTAssertEqualObjects(testPlaylist.songQueue[1], testSong2, @"Admin was unable to move song in queue");
 }
 
 
 - (void)testMakeSubAdmin{
-    
-    XCTAssert(<#expression, ...#>)
+    [testAdmin makeSubAdmin:testUser];
+    compSubAdmin =[[SubAdmin alloc] init];
+    compSubAdmin.userName = @"userName";
+    XCTAssertEqualObjects(testUser, compSubAdmin, @"Admin failed to promote user to subadmin");
 }
 
 - (void)testPerformanceExample {
