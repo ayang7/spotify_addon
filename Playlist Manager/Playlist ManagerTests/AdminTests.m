@@ -32,7 +32,7 @@ Playlist * testPlaylist;
     
     testPlaylist = [[Playlist alloc] init];
     testSong1 = [[Song alloc] initWithTrackID:1234];
-    testSong1 = [[Song alloc] initWithTrackID:5678];
+    testSong2 = [[Song alloc] initWithTrackID:5678];
     [testPlaylist addSongToQueue:testSong1];
     [testPlaylist addSongToQueue:testSong2];
     testUser = [[User alloc] initWithUsername:@"userName"];
