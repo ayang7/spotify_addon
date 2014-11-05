@@ -7,12 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import "SPTPlaylist.h"
 #import "Song.h"
 
-@class SPTPlaylist;
+@class Playlist
 
-@interface Playlist : NSObject
+@interface Playlist : SPTPlaylist
 
 @property (nonatomic, copy) NSMutableArray *songQueue;
 
@@ -35,3 +35,4 @@
 - (Song *)findSongByTrackID:(int)trackID;
 
 @end
+

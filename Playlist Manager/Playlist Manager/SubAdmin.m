@@ -9,10 +9,6 @@
 
 #import "SubAdmin.h"
 
-@interface SubAdmin ()
-
-@end
-
 @implementation SubAdmin
 
 - (void)deleteSong:(NSNumber *) songID

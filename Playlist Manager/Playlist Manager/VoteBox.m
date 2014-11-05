@@ -10,4 +10,15 @@
 
 @implementation VoteBox
 
+- (void)addUpvoteFromUser:(User *)user
+{
+    
+}
+
+- (void)addDownvoteFromUser:(User *)user
+{
+    
+}
+
 @end
+

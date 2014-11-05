@@ -10,4 +10,35 @@
 
 @implementation Playlist
 
+- (instancetype)initWithInitialPlaylist:(SPTPlaylist *)initialPlaylist
+{
+    
+}
+
+- (Song *)playFromQueue
+{
+    
+}
+
+- (void)copyPlaylistToQueue
+{
+    
+}
+
+- (void)rearrange
+{
+    
+}
+
+- (bool)addSongToQueue:(Song *)song
+{
+    
+}
+
+- (Song *)findSongByTrackID:(int)trackID
+{
+    
+}
+
 @end
+
