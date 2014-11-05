@@ -27,7 +27,7 @@ Playlist *testPlaylist;
 
 - (void)setUp {
     [super setUp];
-    
+    testUser1 = [[User alloc] initWithUsername:@"testName"];
     [testUser1 create_SongRoom:@"testSongRoom" name:testPlaylist];
     // Put setup code here. This method is called before the invocation of each test method in the class.
 }
@@ -35,6 +35,10 @@ Playlist *testPlaylist;
 - (void)tearDown {
     // Put teardown code here. This method is called after the invocation of each test method in the class.
     [super tearDown];
+}
+
+- (void) testInitWithUsername{
+    XCTAssertEqualObjects(testUser1.name, @"testName", @"User failed to initialize");
 }
 
 - (void) testCreateSongRoom{
