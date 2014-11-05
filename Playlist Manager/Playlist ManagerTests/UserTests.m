@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-#import "Song.h
+#import "Song.h"
 #import "User.h"
 
 User *testUser1;
