@@ -49,7 +49,7 @@ Playlist * testPlaylist;
     testPlaylist.songQueue[0] = testSong1;
     testPlaylist.songQueue[1] = testSong2;
     [testAdmin moveSong:testPlaylist s:testSong1 newPos:@2];
-    XCTAssertEqualObjects(testPlaylist.songQueue[1], testSong2, @"Admin was unable to move song in queue";
+    XCTAssertEqualObjects(testPlaylist.songQueue[1], testSong2, @"Admin was unable to move song in queue");
 }
 
 

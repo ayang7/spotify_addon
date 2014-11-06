@@ -56,7 +56,7 @@ Playlist *testPlaylist;
 
 - (void)testRequestSong{
     [testUser2 requestSong:testSong1];
-    XCTAssertEqualObjects(testSong1, testUser1.room.pl.songQueue[0]);
+    XCTAssertEqualObjects(testSong1, testUser1.room.pl.songQueue[0], @"Requested song not added to Queue");
 }
 
 - (void)testVoteSong{
