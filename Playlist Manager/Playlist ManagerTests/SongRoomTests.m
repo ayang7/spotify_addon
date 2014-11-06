@@ -26,7 +26,7 @@ SongRoom *room;
 - (void)setUp
 {
     [super setUp];
-    room = [[SongRoom alloc] init];
+    room = [[SongRoom alloc] initWithInfo:@"testname"];
 }
 
 - (void)tearDown
@@ -34,7 +34,14 @@ SongRoom *room;
     [super tearDown];
 }
 
-- (void)addUser : (User *) user{
+- (void)testInitWithInfo
+{
+    //this function is used for building test cases in UserTests.m
+    XCTAssertEqual(room.name, @"testname", @"SongRoom name not properly initialized");
+}
+
+- (void)testAddUser
+{
     [room addUser:testUser];
     XCTAssertEqualObjects(room.users[0], testUser, @"Failed to add user");
     
