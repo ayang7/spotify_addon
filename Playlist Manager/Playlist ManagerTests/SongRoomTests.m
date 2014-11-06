@@ -37,6 +37,7 @@ SongRoom *room;
 - (void)addUser : (User *) user{
     [room addUser:testUser];
     XCTAssertEqualObjects(room.users[0], testUser, @"Failed to add user");
+    
     BOOL val = [room addUser:testUser];
     XCTAssertFalse(val, @"addUser returned true when adding duplicate user");
 }

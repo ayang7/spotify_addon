@@ -65,8 +65,10 @@ Playlist *testPlaylist;
     //TODO
     [testUser1 voteSong:testUser1.room upDown:UP];
     XCTAssertEqual(testSong1.votes, 1, @"User upvote failed");
+    
     [testUser2 voteSong:testUser2.room upDown:DOWN];
     XCTAssertEqual(testSong1.votes, 1, @"Nonmember of song room was able to vote");
+    
     [testUser2 joinSongRoom:testUser1.room];
     [testUser2 voteSong:testUser2.room upDown:DOWN];
     XCTAssertEqual(testSong1.votes, 0, @"User downvote failed");
