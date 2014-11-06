@@ -27,8 +27,11 @@ Playlist *testPlaylist;
 
 - (void)setUp {
     [super setUp];
-    testUser1 = [[User alloc] initWithUsername:@"testName"];
+    testUser1 = [[User alloc] initWithUsername:@"testName1"];
+    testUser2 = [[User alloc] initWithUsername:@"testName2"];
+    testPlaylist = [[Playlist alloc] init];
     [testUser1 create_SongRoom:@"testSongRoom" name:testPlaylist];
+   
     // Put setup code here. This method is called before the invocation of each test method in the class.
 }
 
@@ -38,20 +41,20 @@ Playlist *testPlaylist;
 }
 
 - (void) testInitWithUsername{
-    XCTAssertEqualObjects(testUser1.name, @"testName", @"User failed to initialize");
+    XCTAssertEqualObjects(testUser1.name, @"testName1", @"User failed to initialize");
 }
 
 - (void) testCreateSongRoom{
     
-    SongRoom testSR = [[SongRoom alloc] initWithInfo]; //need to put in initWithInfo func
-    XCTAssertEqualObjects(SongRoom, FAKE SONG ROOM, @"Failed to create song room"); //TODO
-    XCTAssertEqualObjects(testUser1, [[admin alloc] initWithInfo], @"Creator of song room not promoted to admin");
+    SongRoom *testSR = [[SongRoom alloc] initWithInfo:@"testSongRoom"];
+    XCTAssertEqualObjects(SongRoom, testSR, @"Failed to create song room");
+    XCTAssertEqualObjects(testUser1, [[Admin alloc] initWithUsername:@"testName1"], @"Creator of song room not promoted to admin");
     
 }
 
 - (void)testJoinSongRoom{
     [testUser2 joinSongRoom:testSongRoom];
-    XCTAssertEqualObjects(testUser.room, testSongRoom, @"User failed to join song room");
+    XCTAssertEqualObjects(testUser2.room, testSongRoom, @"User failed to join song room");
 }
 
 - (void)testRequestSong{
