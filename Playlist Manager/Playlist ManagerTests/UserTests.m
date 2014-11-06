@@ -31,12 +31,16 @@ Playlist *testPlaylist;
     testUser1 = [[User alloc] initWithUsername:@"testName1"];
     testUser2 = [[User alloc] initWithUsername:@"testName2"];
     testPlaylist = [[Playlist alloc] init];
-    [testUser1 create_SongRoom:@"testSongRoom" name:testPlaylist];
+    [testUser1 create_SongRoom:@"testSongRoom":testPlaylist];
 }
 
 - (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
     [super tearDown];
+    testUser1 = nil;
+    testUser2 = nil;
+    testSong1 = nil;
+    testSong2 = nil;
+    testPlaylist = nil;
 }
 
 - (void) testInitWithUsername{
@@ -44,14 +48,17 @@ Playlist *testPlaylist;
 }
 
 - (void) testCreateSongRoom{
+    SongRoom *testSR = [[SongRoom alloc] init];
+    testSR.name = @"testSongRoom";
+    testSR.pl = testPlaylist;
     
-    SongRoom *testSR = [[SongRoom alloc] initWithInfo:@"testSongRoom"];
-    XCTAssertEqualObjects(SongRoom, testSR, @"Failed to create song room");
+    XCTAssertEqualObjects(testUser1.room, testSR, @"Failed to create song room");
     XCTAssertEqualObjects(testUser1, [[Admin alloc] initWithUsername:@"testName1"], @"Creator of song room not promoted to admin");
-    
 }
 
 - (void)testJoinSongRoom{
+    SongRoom *testSongRoom = [[SongRoom alloc] init];
+    testSongRoom.name = @"testSongRoom";
     [testUser2 joinSongRoom:testSongRoom];
     XCTAssertEqualObjects(testUser2.room, testSongRoom, @"User failed to join song room");
 }
@@ -62,9 +69,11 @@ Playlist *testPlaylist;
 }
 
 - (void)testVoteSong{
-    //TODO
     [testUser1 voteSong:testUser1.room upDown:UP];
     XCTAssertEqual(testSong1.votes, 1, @"User upvote failed");
+    
+    [testUser1 voteSong:testUser1.room upDown:UP];
+    XCTAssertEqual(testSong1.votes, 1, @"User upvote tallied");
     
     [testUser2 voteSong:testUser2.room upDown:DOWN];
     XCTAssertEqual(testSong1.votes, 1, @"Nonmember of song room was able to vote");
@@ -73,6 +82,11 @@ Playlist *testPlaylist;
     [testUser2 voteSong:testUser2.room upDown:DOWN];
     XCTAssertEqual(testSong1.votes, 0, @"User downvote failed");
     
+    [testUser2 voteSong:testUser2.room upDown:DOWN];
+    XCTAssertEqual(testSong1.votes, 0, @"User able to vote twice");
+    
+    [testUser1 voteSong:testUser1.room upDown:DOWN];
+    XCTAssertEqual(testSong1.votes, -2, @"User not able to switch vote");
 }
 
 

@@ -25,7 +25,7 @@
 
 @property (nonatomic) Playlist *pl;
 
-- (void)addUser : (User *) user;
+- (BOOL)addUser : (User *) user;
 
 @end
 

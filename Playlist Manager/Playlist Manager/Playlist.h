@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "SPTPlaylist.h"
 #import "Song.h"
 
 @class Playlist

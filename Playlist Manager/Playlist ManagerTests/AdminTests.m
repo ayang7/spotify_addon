@@ -41,24 +41,35 @@ Playlist * testPlaylist;
 }
 
 - (void)tearDown {
+    testAdmin = nil;
+    testUser = nil;
+    testSong1 = nil;
+    testSong2 = nil;
+    testPlaylist = nil;
     [super tearDown];
 }
 
 - (void)testMoveSong{
-    testPlaylist.songQueue[0] = testSong1;
-    testPlaylist.songQueue[1] = testSong2;
-    [testAdmin moveSong:testPlaylist s:testSong1 newPos:@2];
-    //note that we move testSong1 to position 2, which is at index 1
+    [testAdmin moveSong:testPlaylist:testSong1:@1];
+    //note that we move testSong1 from index 0 to index 1
+    
     XCTAssertEqualObjects(testPlaylist.songQueue[1], testSong1, @"Admin was unable to move song in queue");
+    
+    // testSong2 was at index 1 and with the above move should be pushed up to
+    // index 0
     XCTAssertEqualObjects(testPlaylist.songQueue[0], testSong2, @"Song positions incorrectly updated after move");
    
     //moving testSong1 to position that it already occupies should do nothing
-    [testAdmin moveSong:testPlaylist s:testSong1 newPos:@2];
+    [testAdmin moveSong:testPlaylist:testSong1:@1];
     XCTAssertEqualObjects(testPlaylist.songQueue[1], testSong1, @"Move to same position changed song order");
     XCTAssertEqualObjects(testPlaylist.songQueue[0], testSong2, @"Song positions incorrectly updated after move to same position");
+    
+    // We considered testing moving an invalid song but our addSongToQueue does not allow one to add an invalid song to the queue, which we tested
 }
 
+// Started writing this test for Iteration 2
 
+/*
 - (void)testMakeSubAdmin{
     [testAdmin makeSubAdmin:testUser];
     //dummy subAdmin for comparison
@@ -66,6 +77,7 @@ Playlist * testPlaylist;
     compSubAdmin.userName = @"userName";
     XCTAssertEqualObjects(testUser, compSubAdmin, @"Admin failed to promote user to subadmin");
 }
+ */
 
 - (void)testPerformanceExample {
     // This is an example of a performance test case.

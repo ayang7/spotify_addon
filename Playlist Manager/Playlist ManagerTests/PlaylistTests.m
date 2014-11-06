@@ -14,6 +14,7 @@
 #import "User.h"
 
 Song *testSong;
+Song *invalidSong;
 
 Playlist *playlist;
 
@@ -31,11 +32,15 @@ SPTPlaylist *initialSPTPlaylist;
     //set up objects for test cases
     playlist = [[Playlist alloc] initWithInitialPlaylist:initialSPTPlaylist];
     testSong = [[Song alloc] initWithTrackID:1234];
+    invalidSong = [[Song alloc] initWithTrackID:-1];
 }
 
 - (void)tearDown
 {
     playlist = nil;
+    testSong = nil;
+    invalidSong = nil;
+    initialSPTPlaylist = nil;
     [super tearDown];
 }
 
@@ -47,8 +52,9 @@ SPTPlaylist *initialSPTPlaylist;
 - (void)testAddSongToQueue
 {
     XCTAssert([playlist addSongToQueue:testSong], @"Song was not added");
-    XCTAssert([playlist findSongByTrackID:testSong.trackID], @"Song not found in queue after being added");
+    XCTAssert([playlist findSongByTrackID:testSong.trackID], @"Song not found in queue after being added";
     XCTAssertFalse([playlist addSongToQueue:testSong], @"Song was added twice to queue");
+    XCTAssertFalse([playlist addSongToQueue:invalidSong], @"Invalid song added to queue");
 }
 
 - (void)testPlayFromQueue
@@ -64,7 +70,7 @@ SPTPlaylist *initialSPTPlaylist;
     [playlist addSongToQueue:testSong];
     Song *foundSong = [playlist findSongByTrackID:testSong.trackID];
     XCTAssertEqualObjects(foundSong, testSong, "Found song does not match");
-    Song *notFoundSong = [playlist findSongByTrackID:9999];
+    Song *notFoundSong = [playlist findSongByTrackID:-1];
     XCTAssertNil(notFoundSong, "Song was found even though track ID was invalid");
 }
 

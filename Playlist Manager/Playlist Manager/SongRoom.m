@@ -11,7 +11,7 @@
 
 @implementation SongRoom
 
-- (void)addUser : (User *) user
+- (BOOL)addUser : (User *) user
 {
     
 }

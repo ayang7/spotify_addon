@@ -5,7 +5,7 @@
 //  Created by Mark Landgrebe on 11/4/14.
 //
 //
-
+/*
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
@@ -20,8 +20,13 @@ User *user;
 SubAdmin *subadmin;
 Playlist *playlist;
 Song *testSong;
-
-
+*/
+//********************************************
+//------------------ NOTE --------------------
+// THIS FILE IS GOING TO BE FOR ITERATION 2
+// PLEASE DO NOT GRADE FOR ITERATION 1
+//********************************************
+/*
 @interface SubAdminTests : XCTestCase
 
 @end
@@ -63,7 +68,7 @@ Song *testSong;
     BOOL val2 = [subadmin removeUser:user];
     XCTAssertFalse(val2, @"removeUser did not return false after failed user removal");
 }
-
+*/
 
 
 

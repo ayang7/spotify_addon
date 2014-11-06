@@ -552,11 +552,11 @@
 			children = (
 				5221C3671A06BA6A00E799E4 /* Playlist_ManagerTests.m */,
 				52B2BF871A0ADEFD00A61242 /* AdminTests.m */,
-				5226B7DF1A09D86900C1D8CC /* UserTests.m */,
 				4F9521071A09780100BC3838 /* PlaylistTests.m */,
 				4F9521191A0982BF00BC3838 /* SongTests.m */,
-				5226B7DD1A09D41600C1D8CC /* SongRoomTests.m */,
 				5226B7D71A09C06A00C1D8CC /* SubAdminTests.m */,
+				5226B7DF1A09D86900C1D8CC /* UserTests.m */,
+				5226B7DD1A09D41600C1D8CC /* SongRoomTests.m */,
 				5221C3651A06BA6A00E799E4 /* Supporting Files */,
 			);
 			path = "Playlist ManagerTests";

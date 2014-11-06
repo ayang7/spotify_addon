@@ -9,12 +9,12 @@
 #import "Song.h"
 #import "SongRoom.h"
 #import <Foundation/Foundation.h>
-
+#import "Spotify/Spotify.h"
 
 @interface User : SPTSession
-{
-    SongRoom *room;
-}
+
+@property (nonatomic, strong) SongRoom *room;
+
 
 // This is for testing
 - (instancetype)initWithUsername:(NSString *) name;

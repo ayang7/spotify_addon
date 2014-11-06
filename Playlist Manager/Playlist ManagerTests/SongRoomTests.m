@@ -6,7 +6,7 @@
 //
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
 #import "Song.h"
@@ -26,18 +26,15 @@ SongRoom *room;
 - (void)setUp
 {
     [super setUp];
-    room = [[SongRoom alloc] initWithInfo:@"testname"];
+    room = [[SongRoom alloc] init];
+    testUser = [[User alloc] init];
 }
 
 - (void)tearDown
 {
+    testUser = nil;
+    room = nil;
     [super tearDown];
-}
-
-- (void)testInitWithInfo
-{
-    //this function is used for building test cases in UserTests.m
-    XCTAssertEqual(room.name, @"testname", @"SongRoom name not properly initialized");
 }
 
 - (void)testAddUser

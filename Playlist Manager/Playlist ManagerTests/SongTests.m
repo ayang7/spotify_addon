@@ -61,7 +61,6 @@ Song *song;
     
     XCTAssert([song receiveVote:DOWN fromUser:voter2], "@Downvote failed");
     XCTAssertEqual(song.votes, -2, @"Downvote was not tallied correctly");
-    
 }
 
 @end
