@@ -29,7 +29,7 @@ Playlist * testPlaylist;
 
 - (void)setUp {
     [super setUp];
-    
+    //create objects for test cases
     testPlaylist = [[Playlist alloc] init];
     testSong1 = [[Song alloc] initWithTrackID:1234];
     testSong2 = [[Song alloc] initWithTrackID:5678];
@@ -37,11 +37,10 @@ Playlist * testPlaylist;
     [testPlaylist addSongToQueue:testSong2];
     testUser = [[User alloc] initWithUsername:@"userName"];
     testAdmin = [[Admin alloc] initWithUsername:@"AdminName"];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
+    
 }
 
 - (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
     [super tearDown];
 }
 
@@ -57,6 +56,7 @@ Playlist * testPlaylist;
 
 - (void)testMakeSubAdmin{
     [testAdmin makeSubAdmin:testUser];
+    //dummy subAdmin for comparison
     compSubAdmin =[[SubAdmin alloc] init];
     compSubAdmin.userName = @"userName";
     XCTAssertEqualObjects(testUser, compSubAdmin, @"Admin failed to promote user to subadmin");

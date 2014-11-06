@@ -28,7 +28,7 @@ SPTPlaylist *initialSPTPlaylist;
 - (void)setUp
 {
     [super setUp];
-    
+    //set up objects for test cases
     playlist = [[Playlist alloc] initWithInitialPlaylist:initialSPTPlaylist];
     testSong = [[Song alloc] initWithTrackID:1234];
 }
@@ -36,7 +36,6 @@ SPTPlaylist *initialSPTPlaylist;
 - (void)tearDown
 {
     playlist = nil;
-    
     [super tearDown];
 }
 
@@ -56,7 +55,6 @@ SPTPlaylist *initialSPTPlaylist;
 {
     Song *topSong = playlist.nextSong;
     Song *playedSong = [playlist playFromQueue];
-    
     XCTAssertEqualObjects(playedSong, topSong, @"Played song does not match top song");
     XCTAssertNil([playlist findSongByTrackID:topSong.trackID], @"Top song is still in queue after being played");
 }
@@ -64,10 +62,8 @@ SPTPlaylist *initialSPTPlaylist;
 - (void)testFindSongByTrackID
 {
     [playlist addSongToQueue:testSong];
-    
     Song *foundSong = [playlist findSongByTrackID:testSong.trackID];
     XCTAssertEqualObjects(foundSong, testSong, "Found song does not match");
-    
     Song *notFoundSong = [playlist findSongByTrackID:9999];
     XCTAssertNil(notFoundSong, "Song was found even though track ID was invalid");
 }

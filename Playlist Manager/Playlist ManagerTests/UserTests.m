@@ -27,12 +27,11 @@ Playlist *testPlaylist;
 
 - (void)setUp {
     [super setUp];
+    //set up objects for test cases
     testUser1 = [[User alloc] initWithUsername:@"testName1"];
     testUser2 = [[User alloc] initWithUsername:@"testName2"];
     testPlaylist = [[Playlist alloc] init];
     [testUser1 create_SongRoom:@"testSongRoom" name:testPlaylist];
-   
-    // Put setup code here. This method is called before the invocation of each test method in the class.
 }
 
 - (void)tearDown {

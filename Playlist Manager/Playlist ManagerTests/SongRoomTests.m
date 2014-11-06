@@ -25,9 +25,8 @@ SongRoom *room;
 
 - (void)setUp
 {
-    room = [[SongRoom alloc] init];
     [super setUp];
-    
+    room = [[SongRoom alloc] init];
 }
 
 - (void)tearDown

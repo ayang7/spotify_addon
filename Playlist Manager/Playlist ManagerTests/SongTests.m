@@ -25,6 +25,7 @@ Song *song;
 - (void)setUp
 {
     [super setUp];
+    //set up objects for test cases
     song = [[Song alloc] initWithTrackID:trackID];
 }
 
