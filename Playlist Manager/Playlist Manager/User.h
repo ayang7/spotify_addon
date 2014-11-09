@@ -11,7 +11,7 @@
 #import <Foundation/Foundation.h>
 #import "Spotify/Spotify.h"
 
-class User:
+@class User;
 
 @interface User : SPTSession
 

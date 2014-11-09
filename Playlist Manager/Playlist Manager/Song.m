@@ -7,7 +7,6 @@
 //
 
 #import "Song.h"
-#import "Vote.h"
 
 @interface Song ()
 

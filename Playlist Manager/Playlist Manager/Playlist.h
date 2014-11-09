@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "Song.h"
 
-@class Playlist
+@class Playlist;
 
 @interface Playlist : SPTPlaylist
 

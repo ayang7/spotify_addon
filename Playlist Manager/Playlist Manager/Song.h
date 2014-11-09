@@ -20,7 +20,7 @@ struct userWithVote
     Vote vote;
 } userWithVote;
 
-@class User;
+@class Song;
 
 @interface Song : NSObject
 

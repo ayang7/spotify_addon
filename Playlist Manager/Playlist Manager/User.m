@@ -58,7 +58,7 @@
             [_room.pl addSongToQueue:s];
         }
     } else {
-        //user not in a songroom
+        //user not in a songroom, print an error message?
     }
 }
 

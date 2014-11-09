@@ -9,6 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "User.h"
 
+@class SubAdmin;
+
 @interface SubAdmin : User
 
 - (BOOL)deleteSong:(NSNumber *) songID;
