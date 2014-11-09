@@ -27,7 +27,7 @@
 
 - (void)copyPlaylistToQueue;
 
-- (void)rearrange;
+- (void)rearrange:(Song *)song;
 
 - (bool)addSongToQueue:(Song *)song;
 

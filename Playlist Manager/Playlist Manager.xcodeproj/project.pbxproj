@@ -248,7 +248,7 @@
 		5221C3481A06BA6A00E799E4 /* Playlist Manager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Playlist Manager.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5221C34C1A06BA6A00E799E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5221C34D1A06BA6A00E799E4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		5221C34F1A06BA6A00E799E4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5221C34F1A06BA6A00E799E4 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = "Playlist Manager/AppDelegate.h"; sourceTree = SOURCE_ROOT; };
 		5221C3501A06BA6A00E799E4 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		5221C3521A06BA6A00E799E4 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		5221C3531A06BA6A00E799E4 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
@@ -267,7 +267,7 @@
 		5226B7DD1A09D41600C1D8CC /* SongRoomTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongRoomTests.m; sourceTree = "<group>"; };
 		5226B7DF1A09D86900C1D8CC /* UserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserTests.m; sourceTree = "<group>"; };
 		5226B9181A09D9BF00C1D8CC /* Admin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Admin.h; path = "Playlist ManagerTests/Admin.h"; sourceTree = SOURCE_ROOT; };
-		5226B9191A09D9BF00C1D8CC /* Admin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Admin.m; path = "Playlist ManagerTests/Admin.m"; sourceTree = SOURCE_ROOT; };
+		5226B9191A09D9BF00C1D8CC /* Admin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Admin.m; path = "../Playlist ManagerTests/Admin.m"; sourceTree = "<group>"; };
 		52B2BF871A0ADEFD00A61242 /* AdminTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdminTests.m; sourceTree = "<group>"; };
 		834BCE271A06D210001A8878 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		834BCE281A06D210001A8878 /* .hgignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .hgignore; sourceTree = "<group>"; };
