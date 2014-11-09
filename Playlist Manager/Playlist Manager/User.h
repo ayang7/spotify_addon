@@ -11,6 +11,8 @@
 #import <Foundation/Foundation.h>
 #import "Spotify/Spotify.h"
 
+class User:
+
 @interface User : SPTSession
 
 @property (nonatomic, strong) SongRoom *room;

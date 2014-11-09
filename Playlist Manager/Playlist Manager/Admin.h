@@ -15,8 +15,15 @@
 #import <Foundation/Foundation.h>
 #import "Song.h"
 #import "SubAdmin.h"
+#import "User.h"
 
-@interface Admin : SubAdmin
+//new Admin implementation with User as field
+
+@class Admin;
+
+@interface Admin : NSObject
+
+@property (nonatomic) User *BaseUser;
 
 - (void)moveSong : (Playlist *) pl : (Song *) s : (NSNumber *) newPos;
 - (SubAdmin *) makeSubAdmin : (User *) user;
@@ -24,3 +31,13 @@
 @end
 
 
+/*
+Old admin implementation with Admin inheriting from subadmin
+ 
+@interface Admin : SubAdmin
+
+- (void)moveSong : (Playlist *) pl : (Song *) s : (NSNumber *) newPos;
+- (SubAdmin *) makeSubAdmin : (User *) user;
+
+@end
+*/

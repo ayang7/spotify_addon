@@ -47,9 +47,17 @@
     
 }
 
-- (Song *)findSongByTrackID:(int)trackID
+//this should return a queue index, changed on 11/9
+- (NSNumber *)findSongByTrackID:(int)trackID
 {
-    
+    int i = 0;
+    for (Song *s in _songQueue){
+        if (s.trackID == trackID){
+            return @i
+        }
+        i++;
+    }
+    return NULL;
 }
 
 @end

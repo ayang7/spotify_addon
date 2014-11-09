@@ -9,6 +9,7 @@
 
 #import "SubAdmin.h"
 #import "Playlist.h"
+#import "User.h"
 
 @implementation SubAdmin
 

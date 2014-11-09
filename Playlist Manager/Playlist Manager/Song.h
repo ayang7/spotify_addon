@@ -30,7 +30,8 @@ struct userWithVote
 
 - (instancetype)initWithTrackID:(int)trackID;
 
-- (bool)receiveVote:(bool)vote fromUser:(User *)user;
+//edited on 11/9 to use Vote type
+- (bool)receiveVote:(Vote)vote fromUser:(User *)user;
 
 @end
 

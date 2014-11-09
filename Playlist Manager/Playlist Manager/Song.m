@@ -29,7 +29,8 @@
     return self;
 }
 
-- (bool)receiveVote:(bool)vote fromUser:(User *)user
+//edited on 11/9 to use Vote type
+- (bool)receiveVote:(Vote)vote fromUser:(User *)user
 {
     if ([self.votedUsers containsObject:user])
     {
