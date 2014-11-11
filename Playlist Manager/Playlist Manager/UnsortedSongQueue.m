@@ -67,6 +67,11 @@
     [self insertSong:song atIndex:self.songs.count];
 }
 
+- (bool)containsSong:(Song *)song
+{
+    return [self.songs containsObject:song];
+}
+
 - (void)removeSongAtIndex:(NSUInteger)index
 {
     [self.songs removeObjectAtIndex:index];

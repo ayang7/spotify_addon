@@ -21,6 +21,18 @@
 
 @implementation SongRoom
 
+- (instancetype)initWithName:(NSString *)name
+{
+    self = [super init];
+    if (self)
+    {
+        self.name = name;
+        self.userDictionary = [[NSMutableDictionary alloc] init];
+        self.songQueue = [[SongQueue alloc] init];
+    }
+    return self;
+}
+
 - (bool)containsUser:(User *)user
 {
     return [self containsUsername:user.username];

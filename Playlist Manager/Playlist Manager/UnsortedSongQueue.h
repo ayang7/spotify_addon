@@ -18,6 +18,8 @@
 
 - (void)appendSong:(Song *)song;
 
+- (bool)containsSong:(Song *)song;
+
 - (int)getIndexOfSong:(Song *)song;
 
 - (void)insertSong:(Song *)song atIndex:(NSUInteger)index;

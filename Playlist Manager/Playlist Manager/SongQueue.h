@@ -28,4 +28,6 @@
 
 - (void)removeSongAtIndex:(NSUInteger)index;
 
+- (void)removeTopSong;
+
 @end

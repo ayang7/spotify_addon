@@ -9,40 +9,36 @@
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
-#import "Song.h"
 #import "User.h"
 
-User *testUser1;
-User *testUser2;
-Song *testSong1;
-Song *testSong2;
-Playlist *testPlaylist;
-
-
-@interface Playlist_ManagerTests : XCTestCase
+@interface UserTests : XCTestCase
+{
+    User *testUser1;
+    User *testUser2;
+}
 
 @end
 
-@implementation Playlist_ManagerTests
+@implementation UserTests
 
-- (void)setUp {
+- (void)setUp
+{
     [super setUp];
-    //set up objects for test cases
-    testUser1 = [[User alloc] initWithUsername:@"testName1"];
-    testUser2 = [[User alloc] initWithUsername:@"testName2"];
-    testPlaylist = [[Playlist alloc] init];
-    [testUser1 create_SongRoom:@"testSongRoom":testPlaylist];
+    testUser1 = [[User alloc] initWithUsername:@"testname1"];
+    testUser2 = [[User alloc] initWithUsername:@"testname2"];
 }
 
-- (void)tearDown {
+- (void)tearDown
+{
     [super tearDown];
-    testUser1 = nil;
-    testUser2 = nil;
-    testSong1 = nil;
-    testSong2 = nil;
-    testPlaylist = nil;
 }
 
+- (void)test_initWithUsername
+{
+    XCTAssertEqualObjects(@"testname1", testUser1.username, @"User failed to properly initialize username");
+}
+
+/*
 - (void) testInitWithUsername{
     XCTAssertEqualObjects(testUser1.name, @"testName1", @"User failed to initialize");
 }
@@ -88,13 +84,6 @@ Playlist *testPlaylist;
     [testUser1 voteSong:testUser1.room upDown:DOWN];
     XCTAssertEqual(testSong1.votes, -2, @"User not able to switch vote");
 }
-
-
-- (void)testPerformanceExample {
-    // This is an example of a performance test case.
-    [self measureBlock:^{
-        // Put the code you want to measure the time of here.
-    }];
-}
+*/
 
 @end

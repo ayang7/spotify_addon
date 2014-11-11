@@ -20,6 +20,8 @@
 
 @property (nonatomic, strong) SongQueue *songQueue;
 
+- (instancetype)initWithName:(NSString *)name;
+
 - (bool)containsUser:(User *)user;
 
 - (bool)containsUsername:(NSString *)username;

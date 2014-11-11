@@ -104,9 +104,25 @@ NSString *ObservePropertyName = @"voteScore";
 
 - (void)removeSongAtIndex:(NSUInteger)index
 {
+    if (index >= self.count)
+    {
+        return;
+    }
     Song *song = self[index];
     [super removeSongAtIndex:index];
     [song removeObserver:self forKeyPath:ObservePropertyName];
+}
+
+- (void)removeTopSong
+{
+    if ([self.preferredQueue containsSong:self.nextSong])
+    {
+        [self.preferredQueue removeSongAtIndex:0];
+    }
+    else
+    {
+        [self removeSongAtIndex:0];
+    }
 }
 
 - (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context
