@@ -6,22 +6,49 @@
 //
 //
 
-#import <Foundation/Foundation.h>
 #import "SongRoom.h"
+
+#import "SongQueue.h"
+
+#import "User.h"
+
+@interface SongRoom ()
+
+// Dictionary of username-User key-value pairs.
+@property (nonatomic, copy) NSMutableDictionary *userDictionary;
+
+@end
 
 @implementation SongRoom
 
-- (BOOL)addUser : (User *) user
+- (bool)containsUser:(User *)user
 {
-    //see if user is already in list of users
-    for (User* u in _users){
-        //whatever username is called
-        if (u.canonicalUsername == user.canonicalUsername){
-            return FALSE;
-        }
-    }
-    [_users addObject:user];
-    return TRUE;
+    return [self containsUsername:user.username];
+}
+
+- (bool)containsUsername:(NSString *)username
+{
+    return [self userWithUsername:username] != nil;
+}
+
+- (void)registerUser:(User *)user
+{
+    [self.userDictionary setObject:user forKey:user.username];
+}
+
+- (void)unregisterUser:(User *)user
+{
+    [self unregisterUsername:user.username];
+}
+
+- (void)unregisterUsername:(NSString *)username
+{
+    [self.userDictionary removeObjectForKey:username];
+}
+
+- (User *)userWithUsername:(NSString *)username
+{
+    return [self.userDictionary valueForKey:username];
 }
 
 @end

@@ -7,25 +7,29 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "SubAdmin.h"
-#import "Playlist.h"
-#import "Admin.h"
 
-@class SongRoom;
+#import <Spotify/Spotify.h>
+
+@class SongQueue;
+
+@class User;
 
 @interface SongRoom : NSObject
 
-@property (nonatomic) NSString *name;
+@property (nonatomic, strong) NSString *name;
 
-@property (nonatomic) Admin *admin;
+@property (nonatomic, strong) SongQueue *songQueue;
 
-@property (nonatomic) NSMutableArray *subAdmins;
+- (bool)containsUser:(User *)user;
 
-@property (nonatomic) NSMutableArray *users;
+- (bool)containsUsername:(NSString *)username;
 
-@property (nonatomic) Playlist *pl;
+- (void)registerUser:(User *)user;
 
-- (BOOL)addUser : (User *) user;
+- (void)unregisterUser:(User *)user;
+
+- (void)unregisterUsername:(NSString *)username;
+
+- (User *)userWithUsername:(NSString *)username;
 
 @end
-

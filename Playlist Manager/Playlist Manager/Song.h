@@ -7,31 +7,23 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "User.h"
 
-typedef enum{
-    UP,
-    DOWN
-}Vote;
+#import <Spotify/Spotify.h>
 
-struct userWithVote
-{
-    User *user;
-    Vote vote;
-} userWithVote;
-
-@class Song;
+#import "VoteBox.h"
 
 @interface Song : NSObject
 
+// Unique identifier.
 @property (nonatomic) int trackID;
 
-@property (nonatomic) int votes;
+// The VoteBox representing all user votes registered to this Song.
+@property (nonatomic, strong, readonly) VoteBox *voteBox;
 
+// Returns the sum total of all votes in the vote box registered to this Song.
+@property (nonatomic, readonly) int voteScore;
+
+// Initialize a new Song with the specified track ID.
 - (instancetype)initWithTrackID:(int)trackID;
 
-//edited on 11/9 to use Vote type
-- (bool)receiveVote:(Vote)vote fromUser:(User *)user;
-
 @end
-

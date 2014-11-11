@@ -10,7 +10,7 @@
 
 @interface Song ()
 
-@property (nonatomic, copy) NSMutableArray *votedUsers;
+@property (nonatomic, strong, readwrite) VoteBox *voteBox;
 
 @end
 
@@ -21,36 +21,15 @@
     self = [super init];
     if (self)
     {
-        self.votedUsers = [[NSMutableArray alloc] init];
-        self.votes = 0;
+        self.voteBox = [[VoteBox alloc] init];
         self.trackID = trackID;
     }
     return self;
 }
 
-//edited on 11/9 to use Vote type
-- (bool)receiveVote:(Vote)vote fromUser:(User *)user
+- (int)voteScore
 {
-    if ([self.votedUsers containsObject:user])
-    {
-        return false;
-    }
-    
-    [self tallyVote:vote];
-    [self.votedUsers addObject:user];
-    return true;
-}
-
-- (void)tallyVote:(bool)vote
-{
-    if (vote)
-    {
-        self.votes++;
-    }
-    else
-    {
-        self.votes--;
-    }
+    return self.voteBox.totalScore;
 }
 
 @end

@@ -7,31 +7,31 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <Spotify/Spotify.h>
 #import "Song.h"
 
-@class Playlist;
-
-@interface Playlist : SPTPlaylist
+@interface Playlist : SPTPlaylistList;
 
 @property (nonatomic, copy) NSMutableArray *songQueue;
 
-@property (nonatomic, strong) SPTPlaylist *initialPlaylist;
+@property (nonatomic, strong) SPTPlaylistList *initialPlaylist;
 
-@property (nonatomic, strong) SPTPlaylist *backupPlaylist;
+@property (nonatomic, strong) SPTPlaylistList *backupPlaylist;
 
 @property (nonatomic, strong) Song *nextSong;
 
-- (instancetype)initWithInitialPlaylist:(SPTPlaylist *)initialPlaylist;
+- (instancetype)initWithInitialPlaylist:(SPTPlaylistList *)initialPlaylist;
 
-- (Song *)playFromQueue;
+- (void)playFromQueue;
 
 - (void)copyPlaylistToQueue;
 
-- (void)rearrange:(Song *)song;
+- (void)rearrange:(Song *)s;
 
 - (bool)addSongToQueue:(Song *)song;
 
 - (Song *)findSongByTrackID:(int)trackID;
 
-@end
+- (void)moveSong:(Song *)song toPosition:(int)position;
 
+@end
