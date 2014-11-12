@@ -7,8 +7,8 @@
 #import "AppDelegate.h"
 
 // Constants
-static NSString * const kClientId = @"Your-Client-Id";
-static NSString * const kCallbackURL = @"Your-Callback-URL";
+static NSString * const kClientId = @"3168ef4060a84063a872200bf82dad3a";
+static NSString * const kCallbackURL = @"cs22001-app-login://callback";
 static NSString * const kTokenSwapServiceURL = @"http://localhost:1234/swap";
 
 @interface AppDelegate ()

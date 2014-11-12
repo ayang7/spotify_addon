@@ -29,6 +29,7 @@
 		5226B7DC1A09CC3300C1D8CC /* SongRoom.m in Sources */ = {isa = PBXBuildFile; fileRef = 5226B7DB1A09CC3300C1D8CC /* SongRoom.m */; };
 		5226B7DE1A09D41600C1D8CC /* SongRoomTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5226B7DD1A09D41600C1D8CC /* SongRoomTests.m */; };
 		5226B7E01A09D86900C1D8CC /* UserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5226B7DF1A09D86900C1D8CC /* UserTests.m */; };
+		525BA7801A1307A500B65C91 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 525BA77F1A1307A500B65C91 /* AVFoundation.framework */; };
 		52B2BF881A0ADEFD00A61242 /* AdminTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 52B2BF871A0ADEFD00A61242 /* AdminTests.m */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +79,7 @@
 		5226B7DB1A09CC3300C1D8CC /* SongRoom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongRoom.m; sourceTree = "<group>"; };
 		5226B7DD1A09D41600C1D8CC /* SongRoomTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SongRoomTests.m; sourceTree = "<group>"; };
 		5226B7DF1A09D86900C1D8CC /* UserTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserTests.m; sourceTree = "<group>"; };
+		525BA77F1A1307A500B65C91 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		52B2BF871A0ADEFD00A61242 /* AdminTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdminTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				525BA7801A1307A500B65C91 /* AVFoundation.framework in Frameworks */,
 				5221C38E1A06C0E600E799E4 /* Spotify.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -193,6 +196,7 @@
 		5221C38A1A06BF8900E799E4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				525BA77F1A1307A500B65C91 /* AVFoundation.framework */,
 				5221C38D1A06C0E500E799E4 /* Spotify.framework */,
 			);
 			name = Frameworks;
@@ -443,6 +447,7 @@
 				);
 				INFOPLIST_FILE = "Playlist Manager/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -457,6 +462,7 @@
 				);
 				INFOPLIST_FILE = "Playlist Manager/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

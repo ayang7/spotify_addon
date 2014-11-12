@@ -20,7 +20,7 @@
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>4eb230b9-fdec-e5d3-3054-ce57b7db7bff++505</key>
-		<string>../../../Playlist%20Manager/Playlist%20Manager/Server/CocoaHTTPServer/</string>
+		<string>../../../Playlist%20Manager/Playlist%20Manager/Server/CocoaHTTPServer</string>
 		<key>7105B37C8B76A2675C642F4B4A891E5E5FDF2373</key>
 		<string>../../..</string>
 	</dict>
