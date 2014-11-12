@@ -5,7 +5,7 @@
 //  Created by Andrew Yang on 11/4/14.
 //
 //
-
+/*
 #import <UIKit/UIKit.h>
 #import <XCTest/XCTest.h>
 
@@ -69,7 +69,7 @@ Playlist * testPlaylist;
 
 // Started writing this test for Iteration 2
 
-/*
+
 - (void)testMakeSubAdmin{
     [testAdmin makeSubAdmin:testUser];
     //dummy subAdmin for comparison
@@ -77,7 +77,7 @@ Playlist * testPlaylist;
     compSubAdmin.userName = @"userName";
     XCTAssertEqualObjects(testUser, compSubAdmin, @"Admin failed to promote user to subadmin");
 }
- */
+
 
 - (void)testPerformanceExample {
     // This is an example of a performance test case.
@@ -87,4 +87,4 @@ Playlist * testPlaylist;
 }
 
 @end
-
+*/

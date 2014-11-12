@@ -27,7 +27,7 @@
 			<string>com.playlistmanager.spotify-auth</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>cs22001-app-login://callback</string>
+				<string>cs22001-app-login</string>
 			</array>
 		</dict>
 	</array>
